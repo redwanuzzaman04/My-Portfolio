@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Creative Developer</title>
+ <link rel="stylesheet" href="stylle.css">
+</head>
+<body>
+    <!-- Animated Particles -->
+    <div class="particles" id="particles"></div>
+    
+    <!-- Scroll Progress -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+    
+    <!-- Custom Cursor -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursorFollower"></div>
+    
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-btn" data-tooltip="Home" data-section="home">
+            <svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+        </div>
+        <div class="nav-btn" data-tooltip="About" data-section="about">
+            <svg viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+        </div>
+        <div class="nav-btn" data-tooltip="Services" data-section="services">
+            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+        </div>
+        <div class="nav-btn" data-tooltip="Portfolio" data-section="portfolio">
+            <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zm-5-7l-3 3.72L9 13l-3 4h12l-4-5z"/></svg>
+        </div>
+        <div class="nav-btn" data-tooltip="Contact" data-section="contact">
+            <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+        </div>
+    </nav>
+    
+    <!-- Nav Toggle Button -->
+    <div class="nav-toggle" id="navToggle" title="Toggle Navigation">
+        <svg viewBox="0 0 24 24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+    </div>
+    
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg"></div>
+        <div class="floating-elements">
+            <div class="float-item float-1"></div>
+            <div class="float-item float-2"></div>
+            <div class="float-item float-3"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h4>Welcome to my world</h4>
+                <h1>Hi, I'm <span>Developer Redwan</span></h1>
+                <p>I specialize in game development, web development, design, and data analysis. Creating innovative digital solutions that make a difference.</p>
+                <div class="hero-btns">
+                    <a href="#portfolio" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-outline">Get In Touch</a>
+                </div>
+            </div>
+            <div class="profile-card">
+                <div class="profile-wrapper">
+                    <div class="profile-border"></div>
+                    <div class="profile-img">
+                        <span>👨‍💻</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="about-content">
+            <div class="about-left reveal">
+                <h4>About Me</h4>
+                <h2>I Create <span>Digital Experiences</span> That Matter</h2>
+                <p>I'm a passionate developer with over 3 years of experience in game development, web development, design, and data analysis. I believe in the power of great design combined with clean code.</p>
+                <p>My approach is simple - understand the user's needs, create engaging experiences, and implement robust solutions that deliver results.</p>
+                <div class="stats">
+                    <div class="stat-item">
+                        <div class="stat-number">3+</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">55+</div>
+                        <div class="stat-label">Projects Completed</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">1+</div>
+                        <div class="stat-label">Happy Clients</div>
+                    </div>
+                </div>
+            </div>
+            <div class="skills-container reveal">
+                <div class="skill-card">
+                    <div class="skill-icon">🎮</div>
+                    <h3>Game Development</h3>
+                    <p>Creating engaging and interactive gaming experiences</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">💻</div>
+                    <h3>Web Development</h3>
+                    <p>Building responsive and performant websites</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">🎨</div>
+                    <h3>Design</h3>
+                    <p>Crafting beautiful and intuitive user interfaces</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">📊</div>
+                    <h3>Analysis</h3>
+                    <p>Data analysis and performance optimization</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="section-header reveal">
+            <h4>My Services</h4>
+            <h2>What I Can Do For You</h2>
+            <p>I offer a wide range of services to help bring your digital ideas to life</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card reveal">
+                <div class="service-number">01</div>
+                <div class="service-icon">🎮</div>
+                <h3>Game Development</h3>
+                <p>Creating immersive gaming experiences with engaging gameplay and smooth mechanics</p>
+            </div>
+            <div class="service-card reveal">
+                <div class="service-number">02</div>
+                <div class="service-icon">💻</div>
+                <h3>Web Development</h3>
+                <p>Building responsive, modern websites with clean code and best practices</p>
+            </div>
+            <div class="service-card reveal">
+                <div class="service-number">03</div>
+                <div class="service-icon">🎨</div>
+                <h3>UI/UX Design</h3>
+                <p>Designing beautiful, intuitive interfaces that enhance user experience</p>
+            </div>
+            <div class="service-card reveal">
+                <div class="service-number">04</div>
+                <div class="service-icon">📊</div>
+                <h3>Data Analysis</h3>
+                <p>Analyzing data patterns and metrics to drive informed decisions</p>
+            </div>
+            <div class="service-card reveal">
+                <div class="service-number">05</div>
+                <div class="service-icon">⚡</div>
+                <h3>Performance Optimization</h3>
+                <p>Optimizing applications for speed, efficiency, and better user experience</p>
+            </div>
+            <div class="service-card reveal">
+                <div class="service-number">06</div>
+                <div class="service-icon">🎯</div>
+                <h3>Project Planning</h3>
+                <p>Strategic planning and execution of digital projects from concept to launch</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+        <div class="section-header reveal">
+            <h4>My Portfolio</h4>
+            <h2>Recent Projects</h2>
+            <p>A selection of my recent work</p>
+        </div>
+        <div class="portfolio-grid">
+            <div class="portfolio-item reveal">
+                <div class="portfolio-bg" style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);">
+                    <div class="portfolio-icon-wrapper">
+                        <div class="portfolio-icon-glow"></div>
+                        <span style="font-size: 60px; filter: drop-shadow(0 0 20px rgba(102, 126, 234, 0.5));" class="portfolio-icon">🎮</span>
+                    </div>
+                </div>
+                <div class="portfolio-overlay">
+                    <h3>Action Game</h3>
+                    <p>Fast-paced browser game with smooth controls</p>
+                </div>
+                <div class="portfolio-link">
+                    <svg viewBox="0 0 24 24"><path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/></svg>
+                </div>
+            </div>
+            <div class="portfolio-item reveal">
+                <div class="portfolio-bg" style="background: linear-gradient(135deg, #0d1b2a 0%, #1b263b 50%, #415a77 100%);">
+                    <div class="portfolio-icon-wrapper">
+                        <div class="portfolio-icon-glow"></div>
+                        <span style="font-size: 60px; filter: drop-shadow(0 0 20px rgba(79, 172, 254, 0.5));" class="portfolio-icon">🦖</span>
+                    </div>
+                </div>
+                <div class="portfolio-overlay">
+                    <h3>Dino Game</h3>
+                    <p>Classic endless runner with engaging gameplay</p>
+                </div>
+                <div class="portfolio-link">
+                    <svg viewBox="0 0 24 24"><path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/></svg>
+                </div>
+            </div>
+            <div class="portfolio-item reveal">
+                <div class="portfolio-bg" style="background: linear-gradient(135deg, #1a1a2e 0%, #2d2d44 50%, #3d3d5c 100%);">
+                    <div class="portfolio-icon-wrapper">
+                        <div class="portfolio-icon-glow"></div>
+                        <span style="font-size: 60px; filter: drop-shadow(0 0 20px rgba(118, 75, 162, 0.5));" class="portfolio-icon">💻</span>
+                    </div>
+                </div>
+                <div class="portfolio-overlay">
+                    <h3>Portfolio Website</h3>
+                    <p>Modern responsive portfolio with animations</p>
+                </div>
+                <div class="portfolio-link">
+                    <svg viewBox="0 0 24 24"><path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/></svg>
+                </div>
+            </div>
+            <div class="portfolio-item reveal">
+                <div class="portfolio-bg" style="background: linear-gradient(135deg, #0f0f1a 0%, #1a1a2e 50%, #252540 100%);">
+                    <div class="portfolio-icon-wrapper">
+                        <div class="portfolio-icon-glow"></div>
+                        <span style="font-size: 60px; filter: drop-shadow(0 0 20px rgba(240, 147, 251, 0.5));" class="portfolio-icon">🎨</span>
+                    </div>
+                </div>
+                <div class="portfolio-overlay">
+                    <h3>UI Design System</h3>
+                    <p>Comprehensive design system with components</p>
+                </div>
+                <div class="portfolio-link">
+                    <svg viewBox="0 0 24 24"><path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/></svg>
+                </div>
+            </div>
+            <div class="portfolio-item reveal">
+                <div class="portfolio-bg" style="background: linear-gradient(135deg, #0d1b2a 0%, #1b263b 50%, #415a77 100%);">
+                    <div class="portfolio-icon-wrapper">
+                        <div class="portfolio-icon-glow"></div>
+                        <span style="font-size: 60px; filter: drop-shadow(0 0 20px rgba(0, 242, 254, 0.5));" class="portfolio-icon">🚀</span>
+                    </div>
+                </div>
+                <div class="portfolio-overlay">
+                    <h3>Web Application</h3>
+                    <p>Full-stack web app with modern features</p>
+                </div>
+                <div class="portfolio-link">
+                    <svg viewBox="0 0 24 24"><path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/></svg>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="contact-content">
+            <div class="contact-info reveal">
+                <h4>Get In Touch</h4>
+                <h2>Let's Work <span>Together</span></h2>
+                <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <div class="contact-item-icon">📧</div>
+                        <div class="contact-item-text">
+                            <h4>Email</h4>
+                            <p>redwanuzzaman@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-item-icon">📱</div>
+                        <div class="contact-item-text">
+                            <h4>Phone</h4>
+                            <p>0xxxxxxxx</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-item-icon">📍</div>
+                        <div class="contact-item-text">
+                            <h4>Location</h4>
+                            <p>DXXXXX, XXXXXX</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <form class="contact-form reveal">
+                <div class="form-row">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" id="name">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" id="email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Subject" id="subject">
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Your Message" id="message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+            </form>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">Portfolio</div>
+            <div class="social-links">
+                <a href="#">💼</a>
+                <a href="#">🐙</a>
+                <a href="#">🐦</a>
+                <a href="#">📸</a>
+                <a href="#">💼</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Portfolio. To be the one.</p>
+        </div>
+    </footer>
+    
+    <script src="mainn.js"> </script>
+</body>
+</html>
+
